@@ -1,0 +1,20 @@
+<%- include("Partials/header") -%>
+
+    <h1>Hello</h1>
+    <p> <%=StartingContent%> </p>
+
+    <% posts.forEach(function(post){ %>
+        
+        <h1> <%=post.head%> </h1>
+        <%if(post.body.length<100){%>
+            <p> <%=post.body%> </p>
+        <%}else{%>
+            <p> <%=post.body.substring(0, 100) + "..."%> 
+                <a href="/posts/<%=post._id%>" > Read more </a>
+            </p>
+        <%}%>
+    <% }); %>
+    <br>
+    <a href="/Compose"><button type="button" class="btn btn-primary btn-lg">Compose</button></a>
+    
+<%- include("Partials/footer") -%>
