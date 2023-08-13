@@ -4,7 +4,7 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1/blogDB");
+mongoose.connect(process.env.MONGO_URI);
 
 const blogSchema = new mongoose.Schema({
     head: String,
@@ -82,6 +82,6 @@ app.get("/posts/:id", function(req, res){
   
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT_NO || 3000, function() {
   console.log("Server started on port 3000");
 });
