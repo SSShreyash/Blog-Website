@@ -1,10 +1,11 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.URI);
 
 const blogSchema = new mongoose.Schema({
     head: String,
