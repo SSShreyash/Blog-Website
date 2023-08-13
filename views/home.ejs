@@ -11,7 +11,7 @@
             <p> <%=post.body%> </p>
         <%}else{%>
             <p> <%=post.body.substring(0, 100) + "..."%> 
-                <a href="/posts/<%=post._id%>" > Read more </a>
+                <a href="/posts/<%=post._id%>" target="_blank"> Read more </a>
             </p>
         <%}%>
     <% }); %>
