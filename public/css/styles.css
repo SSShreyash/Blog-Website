@@ -2,7 +2,6 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
-
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -12,15 +11,12 @@
     font-size: 12px;
     letter-spacing: 5px;
 }
-
 .navbar-nav li a:hover {
     color: #1abc9c !important;
 }
-
 .footer-padding {
 	padding-bottom: 60px;
 }
-
 .footer {
     margin-top: 60px;
 	position: absolute;
@@ -30,13 +26,11 @@
 	height: 60px;
 	background-color: #1abc9c;
 }
-
 .footer p {
 	margin-top: 25px;
 	font-size: 12px;
     color: #fff;
 }
-
 .compose-btn{
     margin-top: 20px;
     margin-bottom: 70px;
